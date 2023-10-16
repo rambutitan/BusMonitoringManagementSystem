@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminSetSchedule">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/editBusLinear1"
+    tools:ignore="MissingConstraints"
+
+    android:background="@color/gold"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/uclm_blue"
+        android:alpha="0.9"
+        android:id="@+id/titleText"
+        android:text="EDIT BUS DETAILS"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Cancel"
+        android:id="@+id/cancelText"
+        />
+
+
+</RelativeLayout>
+
+    <Spinner
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_below="@id/editBusLinear1"
+        android:id="@+id/routeSpinner"
+        />
+    <ToggleButton
+        android:id="@+id/routeToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:checked="false"
+        android:textOn="Bus Available"
+        android:layout_toRightOf="@id/routeSpinner"
+        android:layout_below="@id/editBusLinear1"
+        android:textOff="Bus not available"/>
+
+    <Button
+        android:id="@+id/button_choose_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Date"
+        android:layout_below="@id/routeToggleButton"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear2"
+            android:padding="10dp"
+            android:layout_below="@id/button_choose_date">
+
+
+            <!-- Checkbox for driver availability -->
+
+
+            <!-- Textbox for driver name -->
+            <TextView
+                android:id="@+id/driverNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver Name"/>
+            <EditText
+                android:id="@+id/driverNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <!-- Textbox for driver number -->
+            <TextView
+                android:id="@+id/driverNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver Number"/>
+            <EditText
+                android:id="@+id/driverNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Toggle for route -->
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear3"
+        android:layout_below="@id/linear2">
+
+    <TextView
+        android:id="@+id/scheduleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:textSize="25sp"
+        android:text="Available Schedules"/>
+
+
+    </LinearLayout>
+    <!-- Checkbox for 5 schedules -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear5"
+                android:alpha="0.8"
+
+                android:gravity="center"
+                android:layout_below="@id/linear3">
+
+
+
+                <CheckBox
+                    android:id="@+id/schedule1CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="6:00 am"/>
+                    <CheckBox
+                        android:id="@+id/schedule2CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="12:30 pm"/>
+
+                    />
+                <CheckBox
+                    android:id="@+id/schedule3CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="3:30 pm"/>
+
+
+            </LinearLayout>
+    <!-- Checkbox for 5 schedules -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear6"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:layout_below="@id/linear5">
+                <CheckBox
+                    android:id="@+id/schedule4CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="6:00 pm"/>
+                <CheckBox
+                    android:id="@+id/schedule5CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="9:00 pm"/>
+
+
+    </LinearLayout>
+    <!-- Checkbox for 5 schedules -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear6">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_Button"
+            android:text="Submit"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

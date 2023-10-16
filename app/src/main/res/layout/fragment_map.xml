@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    tools:context=".ui.location.MapFragment">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/drive_label_layout"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_label"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_royal"
+            android:text="Viewing your bus Location"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_relative_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_layout">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/gold"
+                android:text="LEGEND:\nMactan: WHITE\nCordova: RED\nConsolacion: BLUE\nLiloan: GREEN"
+                android:background="@color/blue_royal"
+                android:alpha="0.7"
+                android:layout_marginTop="50dp"/>
+
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mactanBtn"
+                android:textOn="Tracking Mactan bus."
+                android:textOff="OFF"
+                android:paddingStart="10dp"
+                android:textColor="#FFFFFF"/>
+            />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cordovaBtn"
+                android:textOn="Tracking Cordova bus."
+                android:paddingStart="10dp"
+                android:textColor="#FF0000"/>
+
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/consolacionBtn"
+                android:text="Consolacion"
+                android:paddingStart="10dp"
+                android:textColor="@color/uclm_blue"/>
+            />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/liloanBtn"
+                android:text="Liloan"
+                android:paddingStart="10dp"
+                android:textColor="#8db600"/>
+            />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="kamote"
+                android:layout_marginTop="50dp"/>
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_relative">
+        <Spinner
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:id="@+id/route_spinner"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

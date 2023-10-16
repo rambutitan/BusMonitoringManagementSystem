@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "440925584308",
+    "firebase_url": "https://busmonitoringandticketing-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "busmonitoringandticketing",
+    "storage_bucket": "busmonitoringandticketing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440925584308:android:93eb9b950d2dc8a8c4d0e1",
+        "android_client_info": {
+          "package_name": "com.example.busayobusmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440925584308-79vp40s678mepo3aot0dh14tfle2rqhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfHzv87rUHGItokhP4quyv83EsARzAbKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440925584308-79vp40s678mepo3aot0dh14tfle2rqhc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440925584308:android:c29c627b798f00a6c4d0e1",
+        "android_client_info": {
+          "package_name": "com.example.busmonitoringandticketingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440925584308-79vp40s678mepo3aot0dh14tfle2rqhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfHzv87rUHGItokhP4quyv83EsARzAbKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440925584308-79vp40s678mepo3aot0dh14tfle2rqhc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

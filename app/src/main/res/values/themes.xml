@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BusMonitoringAndTicketingSystem" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/uclm_yellow</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/uclm_blue</item>
+        <item name="colorSecondaryVariant">@color/uclm_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/uclm_yellow</item>
+
+    </style>
+
+
+
+
+    <style name="UCLM.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="UCLM.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textview_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Username" />
+
+    <ImageView
+        android:id="@+id/imageview_profile"
+        android:layout_below="@id/textview_username"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/registration_icon"/>
+
+    <TextView
+        android:id="@+id/textview_email"
+        android:layout_below="@id/imageview_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Email: " />
+    <TextView
+        android:id="@+id/global_email"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/imageview_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Email: " />
+
+    <TextView
+        android:id="@+id/label_role"
+        android:layout_below="@id/textview_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Role: " />
+    <TextView
+        android:id="@+id/textview_role"
+        android:layout_below="@id/textview_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:text="Role" />
+    <TextView
+        android:id="@+id/admin_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview_role"
+        android:layout_below="@id/global_email"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/blue_royal"
+        android:text="Admin mode"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/label_role">
+
+        <TextView
+            android:id="@+id/rfidLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_role"
+            android:text="Enter rfid tag key:"/>
+
+    </LinearLayout>
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/rfidTagInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_role"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linkRfidInput"
+        android:layout_below="@+id/label_role"
+        android:text="Link"
+        android:layout_toRightOf="@+id/rfidTagInput"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rfidLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rfidTagInput"
+        >
+        <ImageView
+            android:id="@+id/link_rfidTag"
+            android:layout_marginTop="3dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/link_tag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagIDLabel"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/red"
+            android:text="Rfid tag id not linked"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearF1"
+        android:layout_below="@+id/rfidLayout"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/copy_uid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_role"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/black"
+            android:text="Copy uid for tracking"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <ToggleButton
+            android:id="@+id/track_passenger_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/track_passenger_history"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/black"
+            android:textOn="View Bus ride history"
+            android:textOff="Show Bus ride history"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/trackingLayout"
+            android:gravity="center"
+            android:layout_below="@+id/copy_uid"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/track_id_input"
+                    android:hint="Enter uid to track history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/trackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trackingLayout"
+                android:text="TRACK"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearF1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/black"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+
+
+</RelativeLayout>
